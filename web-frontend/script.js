@@ -3,7 +3,7 @@
 
 class FlightDelayPredictor {
     constructor() {
-        this.apiBaseUrl = 'http://localhost:8000'; // Update this to match your backend URL
+        this.apiBaseUrl = 'https://faiz720-flight-delays-api.hf.space'; // Rendered Hugging Face Backend URL
         this.init();
     }
 
