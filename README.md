@@ -9,6 +9,10 @@ app_port: 7860
 ---
 # Flight Delay Prediction Platform
 
+[![Demo Video](https://img.youtube.com/vi/1NZQfnbBpnw/0.jpg)](https://youtu.be/1NZQfnbBpnw)
+
+**[Watch the Full Demo on YouTube: AI-HACKATHON | FLIGHT DELAY PREDICTOR | ML PROJECT](https://youtu.be/1NZQfnbBpnw)**
+
 ## Project Overview
 
 This project implements a production-oriented Flight Delay Prediction Platform to predict flight delays using historical aviation data. The platform provides both classification (delayed or not) and regression (exact delay minutes) capabilities.
