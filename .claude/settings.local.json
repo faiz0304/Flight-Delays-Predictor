@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./venv/Scripts/activate)",
+      "Bash(pip install:*)",
+      "Bash(python -c:*)",
+      "Bash(pip freeze:*)",
+      "Bash(findstr:*)",
+      "Bash(python data/get_sample_data.py:*)",
+      "Bash(python etl/preprocess.py:*)",
+      "Bash(python models/train.py:*)",
+      "Bash(python data/generate_synthetic_data.py:*)",
+      "Bash(python etl/preprocessing.py:*)",
+      "Bash(python:*)",
+      "Bash(uvicorn:*)",
+      "Bash(curl:*)",
+      "Bash(find:*)",
+      "Bash(start /b uvicorn:*)",
+      "Bash(start /b streamlit run:*)",
+      "Bash(dir)"
+    ]
+  }
+}

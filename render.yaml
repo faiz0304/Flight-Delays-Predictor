@@ -1,0 +1,9 @@
+version: "1"
+services:
+  - type: web
+    name: flight-delays-api
+    env: docker
+    dockerfilePath: ./docker/Dockerfile
+    envVars:
+      - key: PORT
+        value: "8000"

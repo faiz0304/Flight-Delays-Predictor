@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual Environment
+venv/
+env/
+.venv/
+ENV/
+
+# Environment Variables
+.env.local
+.env.production
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# MLflow artifacts (large model files - keep structure but exclude binaries)
+mlruns/*/artifacts/**/*.pkl
+mlruns/*/artifacts/**/*.joblib
+mlruns/*/artifacts/**/*.h5
+mlruns/*/artifacts/**/*.bin
+mlflow.db
+
+# Large data files
+data/raw/
+data/processed/
+*.parquet
+*.feather
+
+# Model binaries
+models/*.pkl
+models/*.joblib
+models/*.h5
+
+# Logs
+*.log
+logs/
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Node modules (for frontend)
+frontend/node_modules/
+web-frontend/node_modules/
+node_modules/
+
+# Build output
+frontend/dist/
+web-frontend/dist/
+frontend/build/
+web-frontend/build/
+
+# Temporary files
+*.tmp
+*.bak

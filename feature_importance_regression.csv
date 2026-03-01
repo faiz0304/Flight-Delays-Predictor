@@ -1,0 +1,16 @@
+feature,importance
+weather_impact,0.13058794
+is_peak_travel,0.106945954
+is_holiday_season,0.082502455
+month,0.07394119
+route_encoded,0.063264504
+humidity,0.063162856
+distance,0.061750643
+temperature,0.05842677
+is_weekend,0.05726606
+day_of_week,0.057175696
+scheduled_departure_hour,0.05646148
+destination_encoded,0.051297195
+distance_category_encoded,0.050109237
+airline_encoded,0.044937134
+origin_encoded,0.04217079

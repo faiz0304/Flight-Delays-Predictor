@@ -1,0 +1,34 @@
+# Dockerfile for Streamlit frontend
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# Create non-root user for security
+RUN useradd --create-home --shell /bin/bash app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir --user -r requirements.txt
+
+# Copy application code
+COPY . .
+
+# Make sure scripts in .local are usable
+ENV PATH=/home/app/.local/bin:$PATH
+
+# Change ownership to app user
+RUN chown -R app:app /app
+
+# Switch to non-root user
+USER app
+
+# Expose port for Streamlit
+EXPOSE 8501
+
+# Command to run the Streamlit application
+CMD ["streamlit", "run", "frontend/app.py", "--server.address", "0.0.0.0", "--server.port", "8501", "--server.enableCORS=false", "--server.enableXsrfProtection=false"]
