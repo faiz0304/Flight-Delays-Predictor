@@ -41,9 +41,9 @@ COPY . .
 RUN python -c "import os, urllib.request; \
     os.makedirs('models', exist_ok=True); \
     os.makedirs('data/processed', exist_ok=True); \
-    urllib.request.urlretrieve('https://raw.githubusercontent.com/faiz0304/Flight-Delays-Predictor/main/models/classification_model.pkl', 'models/classification_model.pkl'); \
-    urllib.request.urlretrieve('https://raw.githubusercontent.com/faiz0304/Flight-Delays-Predictor/main/models/regression_model.pkl', 'models/regression_model.pkl'); \
-    urllib.request.urlretrieve('https://raw.githubusercontent.com/faiz0304/Flight-Delays-Predictor/main/data/processed/label_encoders.pkl', 'data/processed/label_encoders.pkl')"
+    urllib.request.urlretrieve('https://raw.githubusercontent.com/faiz0304/Flight-Delays-Predictor/models_branch/models/classification_model.pkl', 'models/classification_model.pkl'); \
+    urllib.request.urlretrieve('https://raw.githubusercontent.com/faiz0304/Flight-Delays-Predictor/models_branch/models/regression_model.pkl', 'models/regression_model.pkl'); \
+    urllib.request.urlretrieve('https://raw.githubusercontent.com/faiz0304/Flight-Delays-Predictor/models_branch/data/processed/label_encoders.pkl', 'data/processed/label_encoders.pkl')"
 
 # Change ownership to app user
 RUN chown -R app:app /app

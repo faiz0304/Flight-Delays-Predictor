@@ -38,7 +38,9 @@ mlruns/*/artifacts/**/*.pkl
 mlruns/*/artifacts/**/*.joblib
 mlruns/*/artifacts/**/*.h5
 mlruns/*/artifacts/**/*.bin
+mlruns/*/artifacts/**/*.ubj
 mlflow.db
+mlruns/
 
 # Large data files
 data/raw/
